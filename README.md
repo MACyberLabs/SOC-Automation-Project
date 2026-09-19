@@ -12,3 +12,4 @@ TheHive — Incident response and case management
 Windows — Monitored endpoint
 
 Architecture:
+![image alt](https://github.com/MohamedAbdallaProjects/SOC-Automation-Project/blob/main/Image%20(1).png?raw=true)
