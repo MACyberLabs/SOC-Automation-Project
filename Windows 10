@@ -1,1 +1,56 @@
+# Windows 10
 
+This section documents the setup of the Windows 10 endpoint used in the SOC automation project. The Windows 10 machine acts as the monitored endpoint where Sysmon is installed to collect detailed system telemetry.
+
+## Windows 10 Virtual Machine
+
+A Windows 10 virtual machine was created using **VMware Workstation Pro**.
+
+The Windows 10 ISO was used as the installation media for the virtual machine.
+
+The virtual machine was configured with:
+
+- **Memory:** 4 GB
+- **CPU:** 1
+- **Virtual Hard Disk:** 50 GB
+
+Windows 10 was then installed on the virtual machine.
+
+During the Windows installation, the following options were selected:
+
+1. **I don't have a product key**
+2. **Windows 10 Pro**
+3. Accept the license terms
+4. **Custom: Install Windows only**
+5. Continue with the Windows installation
+
+After the installation was completed, the Windows 10 virtual machine was ready to be configured for endpoint monitoring.
+
+---
+
+## Sysmon
+
+**Sysmon (System Monitor)** was installed on the Windows 10 endpoint to provide detailed information about activity occurring on the system.
+
+Sysmon provides telemetry that can be used to monitor security-relevant activity on the Windows machine.
+
+The Sysmon files were downloaded and extracted.
+
+The `sysmonconfig.xml` configuration file was also downloaded and placed in the same directory as the extracted Sysmon files.
+
+Because the Windows 10 virtual machine is 64-bit, the **Sysmon64** executable was used.
+
+---
+
+## Sysmon Installation
+
+Before installing Sysmon, PowerShell was opened with **Administrator** privileges.
+
+PowerShell was then used to navigate to the directory containing the extracted Sysmon files.
+
+The `sysmonconfig.xml` file was placed in the same directory as the Sysmon executable.
+
+The following command was used to install Sysmon with the configuration file:
+
+```powershell
+Sysmon64 -i sysmonconfig.xml
