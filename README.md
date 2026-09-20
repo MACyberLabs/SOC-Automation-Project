@@ -21,7 +21,7 @@ The lab integrates **Wazuh, Sysmon, Shuffle, VirusTotal, and TheHive** to create
 
 ## Architecture
 
-![SOC Automation Architecture](https://github.com/MohamedAbdallaProjects/SOC-Automation-Project/blob/main/Image%20%281%29.png?raw=true)
+![SOC Automation Architecture](https://github.com/MohamedAbdallaProjects/SOC-Automation-Project/blob/main/Images/Image%20(1).png?raw=true)
 
 ---
 
