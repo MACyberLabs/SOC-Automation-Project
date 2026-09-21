@@ -39,6 +39,7 @@ The Sysmon files were downloaded and extracted.
 The `sysmonconfig.xml` configuration file was also downloaded and placed in the same directory as the extracted Sysmon files.
 
 Because the Windows 10 virtual machine is 64-bit, the **Sysmon64** executable was used.
+
 ![Sysmon](https://github.com/MohamedAbdallaProjects/SOC-Automation-Project/blob/main/Images/image%20(12).png?raw=true)
 
 ---
@@ -52,8 +53,14 @@ PowerShell was then used to navigate to the directory containing the extracted S
 The `sysmonconfig.xml` file was placed in the same directory as the Sysmon executable.
 
 The following command was used to install Sysmon with the configuration file:
+
 ![Sysmon](https://github.com/MohamedAbdallaProjects/SOC-Automation-Project/blob/main/Images/image%20(13).png?raw=true)
 
 ```powershell
 Sysmon64 -i sysmonconfig.xml
+exit
+```
+
+Open Event Viewer then expand "Application and Service logs", "Microsoft", "Windows", and you should see "Sysmon", verifying it's installed and operating.
+
 ![Sysmon](https://github.com/MohamedAbdallaProjects/SOC-Automation-Project/blob/main/Images/image%20(14).png?raw=true)
