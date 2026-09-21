@@ -4,6 +4,8 @@ This section documents the configuration of the Wazuh server and the Windows 10 
 
 The Wazuh configuration was completed after the TheHive server was configured.
 
+![Wazuh](https://github.com/MohamedAbdallaProjects/SOC-Automation-Project/blob/main/Images/image%20(10).png?raw=true)
+
 ## Wazuh Configuration
 
 To begin configuring Wazuh, the Wazuh Dashboard was accessed using the administrative credentials obtained during the previous setup.
@@ -68,6 +70,8 @@ The service could also be checked through Windows Services.
 
 The Wazuh Service was checked to confirm that it was running.
 
+![Wazuh](https://github.com/MohamedAbdallaProjects/SOC-Automation-Project/blob/main/Images/image%20(11).png?raw=true)
+
 ### Verifying the Wazuh Agent
 
 After starting the Wazuh service, the Wazuh Dashboard was checked again.
@@ -85,6 +89,8 @@ This confirmed that the Windows 10 machine was successfully checking in to Wazuh
 
 The Security Events section could then be opened to query events.
 
+![Wazuh](https://github.com/MohamedAbdallaProjects/SOC-Automation-Project/blob/main/Images/Image%20(4).png?raw=true)
+
 ## Result
 
 The Wazuh server was successfully configured and the Windows 10 client was successfully added as a Wazuh agent.
@@ -92,3 +98,5 @@ The Wazuh server was successfully configured and the Windows 10 client was succe
 The Windows 10 machine was reporting to the Wazuh server and the agent was shown as active in the Wazuh Dashboard.
 
 The environment was now ready for the next stage, where telemetry would be generated and an alert related to Mimikatz usage would be created.
+
+![Wazuh](https://github.com/MohamedAbdallaProjects/SOC-Automation-Project/blob/main/Images/Image%20(5).png?raw=true)
