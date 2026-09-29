@@ -199,6 +199,8 @@ Save the file.
 
 ## 11. Start TheHive
 
+![Image](https://github.com/MACyberLabs/SOC-Automation-Project/blob/main/Images/image.png?raw=true)
+
 ```bash
 sudo systemctl start thehive
 sudo systemctl enable thehive
@@ -233,6 +235,8 @@ sudo systemctl restart elasticsearch
 ```
 
 ## 12. Log in
+
+![Image](https://github.com/MACyberLabs/SOC-Automation-Project/blob/main/Images/image%20(15).png?raw=true)
 
 Browse to:
 
@@ -279,6 +283,8 @@ By default there's only one organization (**admin**). Create a dedicated one for
 7. Highlight the service user → **Preview** → generate an **API key** → copy it and store it securely — this is what Shuffle will use to authenticate to TheHive (see `VirusTotal.md` for the Shuffle-side configuration).
 
 Log out of the admin account and log in as your new analyst user to confirm access — you should now see the **Cases** and **Alerts** views for this organization.
+
+![Image](https://github.com/MACyberLabs/SOC-Automation-Project/blob/main/Images/Image%20(6).png?raw=true)
 
 ## 14. Reachability for automation testing
 
