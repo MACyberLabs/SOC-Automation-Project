@@ -1,5 +1,7 @@
 # 🔗 Shuffle SOAR Workflow — VirusTotal Enrichment, TheHive Alerting & Email Notification
 
+![Image](https://github.com/MACyberLabs/SOC-Automation-Project/blob/main/Images/Image%20(2).png?raw=true)
+
 ![Shuffle](https://img.shields.io/badge/SOAR-Shuffle-6E56CF)
 ![VirusTotal](https://img.shields.io/badge/Enrichment-VirusTotal-394EFF?logo=virustotal&logoColor=white)
 ![TheHive](https://img.shields.io/badge/Case%20Management-TheHive-FF7E29)
