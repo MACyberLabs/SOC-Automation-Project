@@ -61,6 +61,8 @@ Accept any prompts to keep default config files and restart services when asked.
 
 ## 3. Install Wazuh (all-in-one)
 
+![Image](https://github.com/MACyberLabs/SOC-Automation-Project/blob/main/Images/image%20(10).png?raw=true)
+
 With the base OS updated:
 
 ```bash
@@ -93,6 +95,8 @@ The one you care about first is the **admin** password — this logs you into th
 
 ## 4. Log into the dashboard
 
+![Image](https://github.com/MACyberLabs/SOC-Automation-Project/blob/main/Images/image%20(17).png?raw=true)
+
 Browse to:
 
 ```
@@ -106,6 +110,8 @@ Log in with:
 Right after install, you'll see **0 agents**. That's expected until we register the Windows client.
 
 ## 5. Add the Windows 10 agent
+
+![](https://github.com/MACyberLabs/SOC-Automation-Project/blob/main/Images/Image%20(5).png?raw=true)
 
 In the dashboard:
 
@@ -222,6 +228,8 @@ cat /var/ossec/logs/archives/archives.json | grep -i mimikatz
 ```
 
 If it's in the archive file but not the dashboard yet, give it more time (or restart the manager to force ingestion — fine in a lab, avoid in production).
+
+![Image](https://github.com/MACyberLabs/SOC-Automation-Project/blob/main/Images/Image%20(9).png?raw=true)
 
 ## 8. Build a custom detection rule (Mimikatz)
 
