@@ -137,7 +137,7 @@ Since there's no firewall on the theHive Ubuntu 64-bits VM, port `9000` is open 
 5. Save and rerun the workflow.
 6. Check your inbox — you should receive an email with the Mimikatz detection details shortly after the workflow runs.
 
-![Image](https://github.com/MACyberLabs/SOC-Automation-Project/blob/main/Images/image%20(16).png?raw=true)
+
 
 ---
 
