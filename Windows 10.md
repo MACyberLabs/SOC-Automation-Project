@@ -50,6 +50,8 @@ This is the "victim" endpoint in the lab. It runs Windows 10 with Sysmon for det
 
 ## 4. Install Sysmon
 
+![Image](https://github.com/MACyberLabs/SOC-Automation-Project/blob/main/Images/image%20(12).png?raw=true)
+
 Sysmon gives you far richer process/network/registry telemetry than default Windows logging — this is what lets Wazuh detect things like Mimikatz reliably.
 
 1. Download **Sysmon** from [Microsoft Sysinternals](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon) (or via the GitHub mirror if you're not on Windows).
@@ -71,14 +73,22 @@ Sysmon gives you far richer process/network/registry telemetry than default Wind
 ```
    Accept the Sysinternals license prompt.
 
+![Image](https://github.com/MACyberLabs/SOC-Automation-Project/blob/main/Images/image%20(13).png?raw=true)
+
 ### Verify Sysmon is running
+
+![Image](https://github.com/MACyberLabs/SOC-Automation-Project/blob/main/Images/image%20(14).png?raw=true)
 
 - **Services** (`services.msc`) → look for **Sysmon64** / **Sysmon**.
 - **Event Viewer** → **Applications and Services Logs** → **Microsoft** → **Windows** → **Sysmon** → **Operational**. If you don't see it right away, close and reopen Event Viewer (or hit refresh).
 
 You should now see Sysmon generating telemetry (process creations, network connections, etc.) under that Operational log.
 
+![Image](https://github.com/MACyberLabs/SOC-Automation-Project/blob/main/Images/image%20(14).png?raw=true)
+
 ## 5. Install the Wazuh agent
+
+![Image](https://github.com/MACyberLabs/SOC-Automation-Project/blob/main/Images/image%20(11).png?raw=true)
 
 Do this after your Wazuh manager is up and running (see `Wazuh Ubuntu.md`).
 
@@ -96,6 +106,9 @@ Do this after your Wazuh manager is up and running (see `Wazuh Ubuntu.md`).
    or via `services.msc`, find **Wazuh** and start it.
 
 Back on the dashboard, the agent should flip from **Disconnected** to **Active** within a few seconds — confirming Wazuh is receiving telemetry from this host.
+
+![Image](https://github.com/MACyberLabs/SOC-Automation-Project/blob/main/Images/Image%20(4).png?raw=true)
+![Image](https://github.com/MACyberLabs/SOC-Automation-Project/blob/main/Images/Image%20(5).png?raw=true)
 
 ## 6. Configure the agent to ship Sysmon logs
 
@@ -119,6 +132,8 @@ By default, the Wazuh Windows agent forwards Application/Security/System event l
 Confirm it's working: in the Wazuh dashboard, under **Security Events**, search `sysmon`. It may take a little time for events to start appearing.
 
 ## 7. Download and run Mimikatz (test telemetry)
+
+![Image](https://github.com/MACyberLabs/SOC-Automation-Project/blob/main/Images/Image%20(3).png?raw=true)
 
 Mimikatz is a well-known credential-dumping tool used here purely to validate detection — it will absolutely be flagged by antivirus, so we need to allow it temporarily in this lab environment.
 
@@ -152,6 +167,8 @@ Mimikatz is a well-known credential-dumping tool used here purely to validate de
 If nothing shows in the dashboard yet but you can see it in the raw Wazuh archive logs on the manager (`/var/ossec/logs/archives/archives.json`), it just needs a little time to propagate — or Wazuh's default "only log rule matches" behavior means you need the custom rule and archive settings described in `Wazuh Ubuntu.md`.
 
 3. Confirm the alert still fires in Wazuh — see `Wazuh Ubuntu.md` for building that custom rule.
+
+![Image](https://github.com/MACyberLabs/SOC-Automation-Project/blob/main/Images/Image%20(9).png?raw=true)
 
 ## Notes / gotchas
 
