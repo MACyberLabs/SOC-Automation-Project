@@ -96,6 +96,8 @@ Expand the VirusTotal node's output → `body` → `data` → `attributes` → `
 
 ## 6. Create an alert in TheHive
 
+![Image](https://github.com/MACyberLabs/SOC-Automation-Project/blob/main/Images/Image%20(7).png?raw=true)
+
 1. **Apps** → search **TheHive** → drag it onto the canvas, connected after VirusTotal (so its fields are available to reference).
 2. **Authenticate**: paste in the **API key** you generated for the Shuffle service account in TheHive (see `theHive Ubuntu.md`, section 13). For the URL, use the theHive Ubuntu 64-bits VM's IP address and port, e.g. `http://<thehive-vm-ip>:9000`.
 3. Under **Find actions**, choose **Create Alert** (not a query action).
@@ -134,6 +136,8 @@ Since there's no firewall on the theHive Ubuntu 64-bits VM, port `9000` is open 
 4. **Body**: pull in relevant fields via **Execution Argument**, e.g. the UTC time, the alert title, and the computer/hostname so the analyst immediately knows what happened and where.
 5. Save and rerun the workflow.
 6. Check your inbox — you should receive an email with the Mimikatz detection details shortly after the workflow runs.
+
+![Image](https://github.com/MACyberLabs/SOC-Automation-Project/blob/main/Images/image%20(16).png?raw=true)
 
 ---
 
