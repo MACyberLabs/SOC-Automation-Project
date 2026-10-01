@@ -3,7 +3,7 @@
 ![Windows](https://img.shields.io/badge/OS-Windows%2010-0078D6?logo=windows&logoColor=white)
 ![Sysmon](https://img.shields.io/badge/Telemetry-Sysmon-0078D6?logo=windows&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Lab-informational)
-
+ 
 This is the "victim" endpoint in the lab. It runs Windows 10 with Sysmon for detailed telemetry and the Wazuh agent to ship that telemetry to the Wazuh manager. We also use this machine to generate Mimikatz activity to validate detections end-to-end.
 
 > If you're on Apple Silicon (M1/M2/M3), VMware Workstation Pro isn't available for Mac and won't run a Windows 10 x86 VM locally anyway — spin up the Windows 10 client in the cloud instead (e.g. Azure/AWS) and skip straight to the Sysmon section. (VMware Fusion is the Mac equivalent, but Apple Silicon still can't run x86 Windows guests at usable speed.)
