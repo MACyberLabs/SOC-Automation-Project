@@ -3,7 +3,7 @@
 ![Ubuntu](https://img.shields.io/badge/OS-Ubuntu%2022.04-E95420?logo=ubuntu&logoColor=white)
 ![Wazuh](https://img.shields.io/badge/SIEM-Wazuh-3AB6E0?logo=wazuh&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Lab-informational)
-
+ 
 This covers standing up the Wazuh manager on Ubuntu, connecting the Windows 10 agent, configuring log ingestion (Sysmon), building a custom detection rule for Mimikatz, and integrating with Shuffle (SOAR).
 
 > Lab setup: self-hosted Ubuntu VM named **Wazuh Ubuntu 64-bits** in VMware Workstation Pro, running alongside the Windows 10 and theHive Ubuntu 64-bits VMs on the same bridged network.
