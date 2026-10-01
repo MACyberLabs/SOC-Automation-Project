@@ -1,5 +1,5 @@
 # 🐝 TheHive Server (Ubuntu) — Install & Configuration
-
+ 
 ![Ubuntu](https://img.shields.io/badge/OS-Ubuntu%2022.04-E95420?logo=ubuntu&logoColor=white)
 ![TheHive](https://img.shields.io/badge/Case%20Management-TheHive-FF7E29)
 ![Cassandra](https://img.shields.io/badge/DB-Cassandra-1287B1?logo=apachecassandra&logoColor=white)
